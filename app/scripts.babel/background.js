@@ -5,10 +5,12 @@ chrome.runtime.onInstalled.addListener(details => {
 });
 
 chrome.tabs.onUpdated.addListener(function (tabId, info, tab){
-  if (tab.url.includes('https://www.amazon.co.jp')) {
+  if (tab.url.includes('https://job.axol.jp')) {
     // Twitter のページなら有効になる
-    console.log(tab.url)
+    // console.log(add(3,6))
+    // console.log('hogehoge')
     chrome.pageAction.show(tabId);
+    // fill(1,2);
   }
   // chrome.pageAction.show(tabId);
 });

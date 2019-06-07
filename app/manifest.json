@@ -18,6 +18,19 @@
     "storage",
     "tabs"
   ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://job.axol.jp/*"
+      ],
+      "js": [
+        "plugins/jquery-3.4.1.min.js",
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
   "page_action": {
     "default_icon": {
       "19": "images/icon-19.png",
