@@ -13,16 +13,23 @@
   </head>
   <body>
     <h1>マイページ登録用フォーム</h1>
-    <label for="client-company">所属</label>
-    <input type="text" name="kanji_sei" value="" readonly>
+
     <!-- build:js scripts/popup-vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
     <!-- endbuild -->
+
+    <div class="form-data">
+
+    </div>
 
     <!-- build:js scripts/popup.js -->
     <script src="plugins/jquery-3.4.1.min.js"></script>
     <script src="scripts/popup.js"></script>
     <!-- endbuild -->
   </body>
+  <template id="productrow">
+    <label for="client-company">所属</label>
+    <input type="text" name="kanji_sei" value="" readonly>
+  </template>
 </html>

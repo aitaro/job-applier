@@ -1,6 +1,17 @@
 'use strict';
 
-const inputNameList = ['kanji_sei']
+jaTranslation = {
+  kanji_sei : '漢字姓'
+}
+
+
+var inputNameList = []
+$.each($('input[name][type="text"]'), function (i, element) {
+  if (!($(element).attr('name').includes('memo'))) {
+    inputNameList.push($(element).attr('name'))
+  }
+});
+
 
 var defaults = {};
 defaults.form_data = {};
