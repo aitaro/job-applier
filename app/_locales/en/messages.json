@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "fill form automatically for job applying",
+    "description": "The description of the application"
+  }
+}

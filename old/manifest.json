@@ -1,0 +1,27 @@
+{
+  "name": "FirstExtension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "最初のエクステンションです",
+  "icons": {
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        ""
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "128": "images/icon-128.png"
+    },
+    "default_title": "gorokuro auto reservation",
+    "default_popup": "popup.html"
+  }
+}
