@@ -1,6 +1,6 @@
 'use strict';
 
-jaTranslation = {
+const jaTranslation = {
   kanji_sei : '漢字姓'
 }
 
