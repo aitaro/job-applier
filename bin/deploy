@@ -1,0 +1,13 @@
+#!/bin/sh
+
+python version_update.py
+rm app.zip
+zip -r app app
+
+curl \
+-H "Authorization: Bearer $TOKEN"  \
+-H "x-goog-api-version: 2" \
+-X POST \
+-T app.zip \
+-v \
+https://www.googleapis.com/upload/chromewebstore/v1.1/items

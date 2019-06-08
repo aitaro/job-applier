@@ -9,3 +9,4 @@ package
 app/scripts
 app.zip
 .DS_Store
+.envrc

@@ -1,42 +1,42 @@
 {
-  "name": "JOB Applier",
-  "version": "0.0.2",
-  "manifest_version": 2,
-  "description": "適当な説明",
-  "icons": {
-    "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
-  },
-  "default_locale": "en",
   "background": {
     "scripts": [
       "scripts/chromereload.js",
       "scripts/background.js"
     ]
   },
-  "permissions": [
-    "storage",
-    "tabs"
-  ],
   "content_scripts": [
     {
-      "matches": [
-        "https://job.axol.jp/*"
-      ],
+      "all_frames": false,
       "js": [
         "plugins/jquery-3.4.1.min.js",
         "scripts/contentscript.js"
       ],
-      "run_at": "document_end",
-      "all_frames": false
+      "matches": [
+        "https://job.axol.jp/*"
+      ],
+      "run_at": "document_end"
     }
   ],
+  "default_locale": "en",
+  "description": "\u9069\u5f53\u306a\u8aac\u660e",
+  "icons": {
+    "128": "images/icon-128.png",
+    "16": "images/icon-16.png"
+  },
+  "manifest_version": 2,
+  "name": "JOB Applier",
   "page_action": {
     "default_icon": {
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "",
-    "default_popup": "popup.html"
-  }
+    "default_popup": "popup.html",
+    "default_title": ""
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "version": "0.0.6"
 }
