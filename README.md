@@ -1,7 +1,7 @@
 # job-applier
 
 ## 環境構築
-そのうちかく
+- https://github.com/yeoman/generator-chrome-extension
 
 ## deploy環境
 - https://developer.chrome.com/webstore/using_webstore_api に準拠
